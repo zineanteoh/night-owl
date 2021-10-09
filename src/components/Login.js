@@ -27,32 +27,27 @@ class Login extends Component {
 	};
 
 	render() {
-		if (!this.state.isLoggedIn) {
-			return (
-				<div className="login">
-					<div className="login-menu">
-						<h5>Welcome to</h5>
-						<p> Night Owl</p>
-						{/* <div className="owl-img"></div> */}
-					</div>
-					<GoogleLogin
-						clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}
-						buttonText="Login"
-						onSuccess={this.onSuccess}
-						onFailure={this.onFailure}
-						cookiePolicy={"single_host_origin"}
-						style={{ marginTop: "100px" }}
-						isSignedIn={true}
-						className="google-btn"
-					/>
+		return (this.state.isLoggedIn ? (
+			<div className="login">{this.state.isLoggedIn && <Lobby />}</div>
+		) : (
+			<div className="login">
+				<div className="login-menu">
+					<h5>Welcome to</h5>
+					<p> Night Owl</p>
+					{/* <div className="owl-img"></div> */}
 				</div>
-			);
-		} else
-			return (
-				<div className="login">
-					{this.state.isLoggedIn && <Lobby />}
-				</div>
-			);
+				<GoogleLogin
+					clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}
+					buttonText="Login"
+					onSuccess={this.onSuccess}
+					onFailure={this.onFailure}
+					cookiePolicy={"single_host_origin"}
+					style={{ marginTop: "100px" }}
+					isSignedIn={true}
+					className="google-btn"
+				/>
+			</div>
+		));
 	}
 }
 

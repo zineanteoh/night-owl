@@ -1,9 +1,11 @@
 .map {
     grid-area: map;
-    background-color: rgb(192, 196, 250);
+    /* background-color: rgb(58 38 102); */
+    /* background: linear-gradient(25deg, rgb(66, 66, 65), rgb(45, 1, 148)); */
     height: 100%;
 }
 
 .map h2 {
     margin-top: 10px;
+    color: white;
 }

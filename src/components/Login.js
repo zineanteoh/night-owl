@@ -27,14 +27,14 @@ class Login extends Component {
 	};
 
 	render() {
-		return (this.state.isLoggedIn ? (
+		return this.state.isLoggedIn ? (
 			<div className="login">{this.state.isLoggedIn && <Lobby />}</div>
 		) : (
 			<div className="login">
 				<div className="login-menu">
 					<h5>Welcome to</h5>
 					<p> Night Owl</p>
-					{/* <div className="owl-img"></div> */}
+					<div className="owl-img"></div>
 				</div>
 				<GoogleLogin
 					clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}
@@ -47,7 +47,7 @@ class Login extends Component {
 					className="google-btn"
 				/>
 			</div>
-		));
+		);
 	}
 }
 

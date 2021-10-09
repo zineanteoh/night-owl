@@ -46,15 +46,16 @@
 }
 
 .owl-img {
-	background-image: url("../assets/owl.png");
+	background-image: url("../assets/owl_1.png");
 	background-size: 100%;
 	background-repeat: no-repeat;
-	width: 720px;
-	height: 1280px;
+	width: 140px;
+	height: 140px;
 	margin-left: 0px;
 	margin-right: auto;
 	margin-bottom: 20px;
 	position: absolute;
-	bottom: 350px;
-	left: -60px;
+    top: 270px;
+	left: 380px;
+    z-index: 2;
 }

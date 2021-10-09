@@ -1,11 +1,8 @@
 import React, { Component } from "react";
-import "./Map.css"
+import "./Map.css";
 
 class Map extends Component {
-
     render() {
-        <div className="map">
-
-        </div>
+        <div className="map"></div>;
     }
 }

@@ -1,11 +1,8 @@
 import React, { Component } from "react";
-import "./Owl.css"
+import "./Owl.css";
 
 class Owl extends Component {
-
     render() {
-        <div className="owl">
-
-        </div>
+        <div className="owl"></div>;
     }
 }

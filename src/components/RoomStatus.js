@@ -1,11 +1,8 @@
 import React, { Component } from "react";
-import "./RoomStatus.css"
+import "./RoomStatus.css";
 
 class RoomStatus extends Component {
-
     render() {
-        <div className="room-status">
-
-        </div>
+        <div className="room-status"></div>;
     }
 }

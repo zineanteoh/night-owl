@@ -2,7 +2,6 @@
 	text-align: center;
 	height: 100%;
     width: 100%;
-	/* margin-top: 400px; */
 }
 
 .google-btn {
@@ -17,7 +16,7 @@
 .login-menu {
     width: 900px;
     height: 600px;
-    background-image: linear-gradient(25deg, rgb(66, 66, 65), rgb(45, 1, 148));
+    /* background-image: linear-gradient(25deg, rgb(66, 66, 65), rgb(45, 1, 148)); */
     margin: auto;
 	position: absolute;
 	top: 100px;
@@ -46,19 +45,16 @@
 	right: 100px;
 }
 
-.branch {
-    background-image: url("../assets/branch.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    width: 300px;
-    height: 300px;
-    display: block;
-    margin-left: 0px;
-    margin-right: auto;
-    margin-bottom: 20px;
-    position: absolute;
-    bottom:100px;
-    left: 0px;
-    transform: rotate(-10deg);
-    
+.owl-img {
+	background-image: url("../assets/owl.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 720px;
+	height: 1280px;
+	margin-left: 0px;
+	margin-right: auto;
+	margin-bottom: 20px;
+	position: absolute;
+	bottom: 350px;
+	left: -60px;
 }

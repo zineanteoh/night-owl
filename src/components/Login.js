@@ -33,8 +33,7 @@ class Login extends Component {
 					<div className="login-menu">
 						<h5>Welcome to</h5>
 						<p> Night Owl</p>
-						<div className="owl-img"></div>
-						<div className="branch"></div>
+						{/* <div className="owl-img"></div> */}
 					</div>
 					<GoogleLogin
 						clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}

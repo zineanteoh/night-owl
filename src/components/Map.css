@@ -1,12 +1,7 @@
 .map {
     grid-area: map;
-    background-color: rgb(218, 235, 255);
+    background-color: rgb(192, 196, 250);
     height: 100%;
-    /* grid-area: lobby; */
-    /* text-align: center; */
-    /* right: 0; */
-    /* background-color: pink; */
-    /* width: 67%; */
 }
 
 .map h2 {

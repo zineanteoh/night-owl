@@ -4,44 +4,54 @@ import ChatRoomFirebase from "./ChatRoomFirebase";
 import "./Chat.css";
 
 class Chat extends Component {
-	// openChatRoom = (chatName) => {
-	// 	return <ChatRoom chatName={chatName}/>;
-	// };
+	constructor(props) {
+        super(props);
+
+        this.state = {
+            isChatRoomOpen: false,
+            // subject: "",
+        }
+        this.triggerChatRoom = this.triggerChatRoom.bind(this);
+    }
+
+    triggerChatRoom(subject) {
+        this.setState({isChatRoomOpen: !this.state.isChatRoomOpen})
+    }
 
 	render() {
 		return (
 			<div className="chat">
 				<h2>Chats</h2>
 				<ol className="chat-grid">
-					<li className="chat-item">
+					<li className="chat-item" onClick={this.triggerChatRoom}>
 						<h2>Biology</h2>
 					</li>
-					<li className="chat-item">
+					<li className="chat-item" onClick={this.triggerChatRoom}>
 						<h2>Calculus</h2>
 					</li>
-					<li className="chat-item">
+					<li className="chat-item" onClick={this.triggerChatRoom}>
 						<h2>Chemistry</h2>
 					</li>
-					<li className="chat-item">
+					<li className="chat-item" onClick={this.triggerChatRoom}>
 						<h2>Cognitive Studies</h2>
 					</li>
-					<li className="chat-item">
+					<li className="chat-item" onClick={this.triggerChatRoom}>
 						<h2>Computer Science</h2>
 					</li>
-					<li className="chat-item">
+					<li className="chat-item" onClick={this.triggerChatRoom}>
 						<h2>Economics</h2>
 					</li>
-					<li className="chat-item">
+					<li className="chat-item" onClick={this.triggerChatRoom}>
 						<h2>History</h2>
 					</li>
-					<li className="chat-item">
+					<li className="chat-item" onClick={this.triggerChatRoom}>
 						<h2>Psychology</h2>
 					</li>
-					<li className="chat-item">
+					<li className="chat-item" onClick={this.triggerChatRoom}>
 						<h2>Statistics</h2>
 					</li>
 				</ol>
-                <ChatRoomFirebase/>
+                {this.state.isChatRoomOpen && <ChatRoomFirebase/>}
                 {/* <ChatRoom/> */}
 			</div>
 		);

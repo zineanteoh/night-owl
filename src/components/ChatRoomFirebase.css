@@ -1,10 +1,14 @@
-.ChatRoomFirebase {
+body {
+  background-color: #282c34;
+}
+
+.App {
   text-align: center;
   max-width: 728px;
   margin: 0 auto;
 }
 
-.ChatRoomFirebase div {
+.App header {
   background-color: #181717;
   height: 10vh;
   min-height: 50px;
@@ -13,6 +17,7 @@
   width: 100%;
   max-width: 728px;
   top: 0;
+  right: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -21,15 +26,19 @@
   box-sizing: border-box;
 }
 
-.ChatRoomFirebase section {
+.App section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
   background-color: rgb(40, 37, 53);
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 728px;
 }
 
-/* main {
+main {
   padding: 10px;
   height: 80vh;
   margin: 10vh 0 10vh;
@@ -48,9 +57,10 @@ main::-webkit-scrollbar-track {
 
 main::-webkit-scrollbar-thumb {
   background: #6649b8;
-} */
+}
 
-.ChatRoomFirebase form {
+form {
+  right: 0;
   height: 10vh;
   position: fixed;
   bottom: 0;
@@ -61,13 +71,13 @@ main::-webkit-scrollbar-thumb {
   font-size: 1.5rem;
 }
 
-.ChatRoomFirebase form button {
+form button {
   width: 20%;
   background-color: rgb(56, 56, 143);
 }
 
 
-.ChatRoomFirebase input {
+input {
   line-height: 1.5;
   width: 100%;
   font-size: 1.5rem;
@@ -78,7 +88,7 @@ main::-webkit-scrollbar-thumb {
   padding: 0 10px;
 }
 
-.ChatRoomFirebase button {
+button {
   background-color: #282c34; /* Green */
   border: none;
   color: white;
@@ -90,13 +100,13 @@ main::-webkit-scrollbar-thumb {
   font-size: 1.25rem;
 }
 
-.ChatRoomFirebase button:disabled {
+button:disabled {
   opacity: 0.5;
   cursor: not-allowed;
 }
 
 
-.ChatRoomFirebase .sign-in {
+.sign-in {
   color: #282c34;
   background: white;
   max-width: 400px;
@@ -106,12 +116,12 @@ main::-webkit-scrollbar-thumb {
 
 
 
-.ChatRoomFirebase ul, li {
+ul, li {
   text-align: left;
   list-style: none;
 }
 
-.ChatRoomFirebase p {
+p {
   max-width: 500px;
   margin-bottom: 12px;
   line-height: 24px;
@@ -122,28 +132,27 @@ main::-webkit-scrollbar-thumb {
   text-align: center;
 }
 
-.ChatRoomFirebase .message {
+.message {
   display: flex;
   align-items: center;
 }
 
 
-.ChatRoomFirebase .sent {
+.sent {
   flex-direction: row-reverse;
 }
 
-.ChatRoomFirebase .sent p {
+.sent p {
   color: white;
   background: #0b93f6;
   align-self: flex-end;
 }
-
-.ChatRoomFirebase .received p {
+.received p {
   background: #e5e5ea;
   color: black;
 }
 
-.ChatRoomFirebase img {
+img {
   width: 40px;
   height: 40px;
   border-radius: 50%;

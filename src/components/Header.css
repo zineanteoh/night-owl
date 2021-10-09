@@ -1,0 +1,10 @@
+.header {
+    grid-area: header;
+    background-color: rgb(57, 90, 139);
+}
+
+.header h1 {
+    color: white;
+    font-size: 2.0rem;
+    margin-top: 10px;
+}

@@ -3,14 +3,14 @@ import "./Main.css";
 import Login from "./Login";
 
 class Main extends Component {
-    render() {
-        return (
-            <div className="main">
-                <h1>Welcome to Night Owl</h1>
-                <Login />
-            </div>
-        );
-    }
+	
+	render() {
+		return (
+			<div className="main">
+				<Login />
+			</div>
+		);
+	}
 }
 
 export default Main;

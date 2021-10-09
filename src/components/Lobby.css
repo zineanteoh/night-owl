@@ -1,0 +1,9 @@
+.lobby {
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 6fr;
+    grid-template-areas: 
+        "header header"
+        "chat map";
+}

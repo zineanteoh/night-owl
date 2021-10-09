@@ -5,6 +5,7 @@ class Map extends Component {
     render() {
         return (
             <div className="map">
+                <div className="map-area"></div>
                 {/* <h2>Lobby</h2> */}
             </div>
         );

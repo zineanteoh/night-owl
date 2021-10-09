@@ -59,3 +59,35 @@
 	left: 380px;
     z-index: 2;
 }
+
+.owl-img:hover {
+    cursor: pointer;
+    animation: bounce 1s linear;
+}
+
+@keyframes bounce {
+    20%,50%,80%,to{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(-30px);
+    }
+    70%{
+        transform: translateY(-15px);
+    }
+    90%{
+        transform: translateY(-4px);
+    }
+}
+
+.login-menu{
+    animation: glowing 2500ms infinite;
+    border-radius: 30px;
+}
+
+@keyframes glowing {
+    0% { box-shadow: 0 0 -20px #c4a300; }
+    40% { box-shadow: 0 0 20px #c4a300; }
+    60% { box-shadow: 0 0 20px #c4a300; }
+    100% { box-shadow: 0 0 -20px #c4a300; }
+  }

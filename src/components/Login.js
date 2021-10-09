@@ -14,10 +14,6 @@ class Login extends Component {
 		};
 	}
 
-	// getState() {
-	//     return this.state.isLoggedIn;
-	// }
-
 	onSuccess = (res) => {
 		console.log("Login Success: currentUser:", res.profileObj);
 		// alert(`Logged in successfully welcome ${res.profileObj.name}.\n`);
@@ -34,7 +30,12 @@ class Login extends Component {
 		if (!this.state.isLoggedIn) {
 			return (
 				<div className="login">
-					<h1>Welcome to Night Owl</h1>
+					<div className="login-menu">
+						<h5>Welcome to</h5>
+						<p> Night Owl</p>
+						<div className="owl-img"></div>
+						<div className="branch"></div>
+					</div>
 					<GoogleLogin
 						clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}
 						buttonText="Login"
@@ -43,6 +44,7 @@ class Login extends Component {
 						cookiePolicy={"single_host_origin"}
 						style={{ marginTop: "100px" }}
 						isSignedIn={true}
+						className="google-btn"
 					/>
 				</div>
 			);

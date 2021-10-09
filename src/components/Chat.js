@@ -3,6 +3,12 @@ import "./Chat.css";
 
 class Chat extends Component {
     render() {
-        <div className="chat"></div>;
+        return (
+            <div className="chat">
+                <p>This is chat!</p>
+            </div>
+        );
     }
 }
+
+export default Chat;

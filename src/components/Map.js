@@ -3,6 +3,12 @@ import "./Map.css";
 
 class Map extends Component {
     render() {
-        <div className="map"></div>;
+        return (
+            <div className="map">
+                <p>This is map!</p>
+            </div>
+        );
     }
 }
+
+export default Map;

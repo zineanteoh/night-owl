@@ -28,9 +28,9 @@ function ChatRoomFirebase() {
 
 	return (
 		<div className="ChatRoomFirebase">
-			{/* <div>
+			<div>
         <SignOut />
-      </div> */}
+      </div>
 
 			<section>{user ? <ChatRoom /> : <SignIn />}</section>
 		</div>
@@ -56,11 +56,11 @@ function SignIn() {
 	);
 }
 
-// function SignOut() {
-//   return auth.currentUser && (
-//     <button className="sign-out" onClick={() => auth.signOut()}>Sign Out</button>
-//   )
-// }
+function SignOut() {
+  return auth.currentUser && (
+    <button className="sign-out" onClick={() => auth.signOut()}>Sign Out</button>
+  )
+}
 
 function ChatRoom() {
 	const dummy = useRef();
@@ -133,4 +133,4 @@ function ChatMessage(props) {
 	);
 }
 
-export default {ChatRoomFirebase, SignIn};
+export default ChatRoomFirebase;

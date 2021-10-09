@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import ChatRoom from "./ChatRoom";
+// import ChatRoom from "./ChatRoom";
 import ChatRoomFirebase from "./ChatRoomFirebase";
 import "./Chat.css";
 
@@ -41,7 +41,7 @@ class Chat extends Component {
 						<h2>Statistics</h2>
 					</li>
 				</ol>
-                {/* <ChatRoomFirebase/> */}
+                <ChatRoomFirebase/>
                 {/* <ChatRoom/> */}
 			</div>
 		);

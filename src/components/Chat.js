@@ -20,34 +20,34 @@ class Chat extends Component {
 	render() {
 		return (
 			<div className="chat">
-				<h2>Chats</h2>
+				<h2>Chat Rooms</h2>
 				<ol className="chat-grid">
 					<li className="chat-item" onClick={this.triggerChatRoom}>
-						<h2>Biology</h2>
+						<p>Biology</p>
 					</li>
 					<li className="chat-item" onClick={this.triggerChatRoom}>
-						<h2>Calculus</h2>
+						<p>Calculus</p>
 					</li>
 					<li className="chat-item" onClick={this.triggerChatRoom}>
-						<h2>Chemistry</h2>
+						<p>Chemistry</p>
 					</li>
 					<li className="chat-item" onClick={this.triggerChatRoom}>
-						<h2>Cognitive Studies</h2>
+						<p>Cognitive Studies</p>
 					</li>
 					<li className="chat-item" onClick={this.triggerChatRoom}>
-						<h2>Computer Science</h2>
+						<p>Computer Science</p>
 					</li>
 					<li className="chat-item" onClick={this.triggerChatRoom}>
-						<h2>Economics</h2>
+						<p>Economics</p>
 					</li>
 					<li className="chat-item" onClick={this.triggerChatRoom}>
-						<h2>History</h2>
+						<p>History</p>
 					</li>
 					<li className="chat-item" onClick={this.triggerChatRoom}>
-						<h2>Psychology</h2>
+						<p>Psychology</p>
 					</li>
 					<li className="chat-item" onClick={this.triggerChatRoom}>
-						<h2>Statistics</h2>
+						<p>Statistics</p>
 					</li>
 				</ol>
                 {this.state.isChatRoomOpen && <ChatRoomFirebase/>}

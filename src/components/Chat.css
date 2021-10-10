@@ -1,33 +1,42 @@
 .chat {
 	grid-area: chat;
-    background-color: white;
-    border-right: 1px solid black;
-    height: 100vh;
+	background-color: white;
+	border-right: 1px solid black;
+	height: 100vh;
+	border-top-right-radius: 60px;
 }
 
-.chat h2 {
-    margin-top: 20px;
-    margin-bottom: 20px;
+.chat > h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: left;
+	padding: 40px 0 0 30px;
+}
+
+.chat p {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 1.7rem;
 }
 
 .chat-grid {
 	text-align: left;
 	width: 100%;
 	height: 100%;
-    overflow: scroll;
+	overflow: scroll;
 }
 
 .chat-item {
-    padding: 17px;
-    height: 40px;
-    border-top: 1px solid black;
+	padding: 17px;
+	padding-left: 30px;
+	height: 40px;
 }
-
+/* 
 .chat-item:nth-child(even) {
     background-color: white;
-}
+} */
 
 .chat-item:hover {
-    cursor: pointer;
-    background-color: rgb(192, 196, 250);
+	cursor: pointer;
+	background-color: rgb(255, 230, 183);
 }

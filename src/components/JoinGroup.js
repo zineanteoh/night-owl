@@ -11,9 +11,11 @@ class JoinGroup extends Component {
 
 				<div class="partition anyone">
 					<h3>Study with Anyone</h3>
-					<div className="brown1_owl"></div>
-					<div className="yellow_owl"></div>
-					<div className="pink_owl"></div>
+					<div className="owls">
+						<div className="brown1_owl"></div>
+						<div className="yellow_owl"></div>
+						<div className="pink_owl"></div>
+					</div>
 					<div class="select">
 						<select name="slct" id="slct">
 							<option>Select a group</option>
@@ -26,9 +28,11 @@ class JoinGroup extends Component {
 
 				<div class="partition subject">
 					<h3>Study by Subject</h3>
-					<div className="brown1_owl"></div>
-					<div className="brown2_owl"></div>
-					<div className="brown3_owl"></div>
+					<div className="owls">
+						<div className="brown1_owl"></div>
+						<div className="brown2_owl"></div>
+						<div className="brown3_owl"></div>
+					</div>
 					<div class="selectC">
 						<select name="slct" id="slct">
 							<option>Select a group</option>

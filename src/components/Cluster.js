@@ -3,7 +3,11 @@ import "./Cluster.css";
 
 class Cluster extends Component {
 	render() {
-		return <div className="cluster"></div>;
+		return (
+			<div className="cluster">
+				<iframe src="http://localhost:8000/" sandbox></iframe>
+			</div>
+		);
 	}
 }
 

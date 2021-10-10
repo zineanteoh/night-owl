@@ -55,14 +55,14 @@ d3.csv("/data.csv", function (data) {
 			return color(d.ID);
 		})
 		.style("stroke-width", 10)
-		.style("pointer-events", "all");
-		// .call(
-		// 	d3
-		// 		.drag()
-		// 		.on("start", dragstarted)
-		// 		.on("drag", dragged)
-		// 		.on("end", dragended)
-		// );
+		.style("pointer-events", "all")
+		.call(
+			d3
+				.drag()
+				.on("start", dragstarted)
+				.on("drag", dragged)
+				.on("end", dragended)
+		);
 
 	circles = circles.merge(circlesEnter);
 

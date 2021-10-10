@@ -2,18 +2,12 @@
 	grid-area: chat;
     background-color: white;
     border-right: 1px solid black;
-    /* margin-top: -60px; */
     height: 100vh;
 }
 
 .chat h2 {
     margin-top: 20px;
     margin-bottom: 20px;
-}
-
-.chat > h2 {
-    /* background-color: rgb(213, 196, 252); */
-    /* color: white; */
 }
 
 .chat-grid {
@@ -28,11 +22,6 @@
     height: 40px;
     border-top: 1px solid black;
 }
-
-/* .chat-item:nth-child(odd) {
-    background-color: rgb(215, 219, 255);
-    background-image: linear-gradient(25deg, rgb(66, 66, 65), rgb(45, 1, 148));
-} */
 
 .chat-item:nth-child(even) {
     background-color: white;

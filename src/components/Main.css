@@ -1,13 +1,11 @@
 * {
 	margin: 0;
 	padding: 0;
-	/* overflow: hidden; */
-	
 }
 
 html, body {
 	height: 100%;
-    overflow: auto;
+	overflow: hidden;
     background: linear-gradient(25deg, rgb(66, 66, 65), rgb(45, 1, 148));
 }
 

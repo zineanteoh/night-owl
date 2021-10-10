@@ -9,7 +9,6 @@ class Chat extends Component {
 
         this.state = {
             isChatRoomOpen: false,
-            // subject: "",
         }
         this.triggerChatRoom = this.triggerChatRoom.bind(this);
     }
@@ -52,7 +51,6 @@ class Chat extends Component {
 					</li>
 				</ol>
                 {this.state.isChatRoomOpen && <ChatRoomFirebase/>}
-                {/* <ChatRoom/> */}
 			</div>
 		);
 	}

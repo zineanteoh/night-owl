@@ -1,4 +1,4 @@
-.creategroup {
+.joingroup {
 	display: flex;
 	position: relative;
 	flex-direction: column;
@@ -6,15 +6,13 @@
 
 	height: 600px;
 }
-
-/* Create New Group */
-
-.creategroup h1 {
+/* 
+.joingroup h1 {
 	text-align: center;
 	font-size: 40px;
 }
 
-.creategroup h2 {
+.joingroup h2 {
 	text-align: left;
 	right: 5%;
 	padding: 15px;
@@ -23,7 +21,7 @@
 	margin-bottom: 0;
 }
 
-.creategroup h3 {
+.joingroup h3 {
 	text-align: center;
 	right: 5%;
 	padding: 15px;
@@ -32,20 +30,121 @@
 	margin-bottom: 0;
 }
 
-.creategroup h4 {
+.joingroup h4 {
 	font-size: 25px;
 	padding: 10px;
 }
 
 .submit {
 	background: rgba(200, 200, 200, 1);
-	width: 120px;
+	width: 17%;
 	text-align: center;
-    margin-bottom: 20px;
+	height: 60%;
+	margin-left: 40%;
+	margin-top: 36%;
 }
 
-.submit:hover {
-    cursor: pointer;
+.partition {
+	height: 100%;
+	width: 50%;
+	position: fixed;
+	z-index: 1;
+	top: 20;
+	overflow-x: hidden;
+	padding-top: 0px;
+}
+
+.subject {
+	text-align: center;
+	background: rgba(200, 200, 200, 0);
+	margin-left: 8%;
+	width: 28%;
+	left: 10%;
+	height: 45%;
+	margin-top: 6%;
+}
+
+.subject:hover {
+	background: rgba(128, 128, 128, 0.3);
+}
+
+.anyone {
+	text-align: center;
+	margin-top: 6%;
+	margin-right: 8%;
+	background: rgba(200, 200, 200, 0);
+	width: 28%;
+	right: 12%;
+	height: 45%;
+}
+
+.anyone:hover {
+	background: rgba(128, 128, 128, 0.3);
+}
+
+.location {
+	margin-left: 10%;
+	margin-right: 10%;
+	top: 100px;
+	height: 100px;
+	position: relative;
+	outline: none;
+	align-items: center;
+}
+
+input {
+	font-size: 24px;
+}
+.brown1_owl {
+	background-image: url("../assets/brown_owl.png");
+	background-size: 175px;
+	background-repeat: no-repeat;
+	width: 200px;
+	height: 200px;
+	margin-left: 11%;
+	margin-top: 6%;
+	position: absolute;
+}
+.brown2_owl {
+	background-image: url("../assets/brown_owl.png");
+	background-size: 175px;
+	background-repeat: no-repeat;
+	width: 200px;
+	height: 200px;
+	margin-left: 28%;
+	margin-top: 9%;
+	position: absolute;
+}
+
+.brown3_owl {
+	background-image: url("../assets/brown_owl.png");
+	background-size: 175px;
+	background-repeat: no-repeat;
+	width: 200px;
+	height: 200px;
+	margin-left: 46%;
+	margin-top: 6%;
+}
+
+.yellow_owl {
+	background-image: url("../assets/yellow_owl.png");
+	background-size: 175px;
+	background-repeat: no-repeat;
+	width: 200px;
+	height: 200px;
+	margin-left: 32%;
+	margin-top: 9%;
+	position: absolute;
+}
+
+.pink_owl {
+	background-image: url("../assets/pink_owl.png");
+	background-size: 175px;
+	background-repeat: no-repeat;
+	width: 200px;
+	height: 200px;
+	margin-left: 50%;
+	margin-top: 6%;
 }
 
 select {
@@ -58,10 +157,8 @@ select {
 	background-image: none;
 	border: 4px solid black;
 }
-
 .select {
-    left: 27%;
-    top: 15%;
+	margin-left: 10%;
 	position: absolute;
 	width: 20em;
 	height: 3em;
@@ -70,7 +167,6 @@ select {
 	overflow: hidden;
 	border-radius: 0.25em;
 }
-
 select {
 	width: 100%;
 	height: 100%;
@@ -79,7 +175,9 @@ select {
 	color: black;
 	cursor: pointer;
 }
-
+select::-ms-expand {
+	display: none;
+}
 .select::after {
 	content: "\25BC";
 	position: absolute;
@@ -94,108 +192,12 @@ select {
 	color: #2d0194;
 }
 
-.partition {
-    margin-top: 150px;
-	position: fixed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.subject {
-	background: rgba(200, 200, 200, 0);
-	margin-left: 350px;
-	width: 25%;
-	left: 0.5%;
-}
-
-.subject:hover {
-	background: rgba(128, 128, 128, 0.3);
-}
-
-.owls {
-    position: relative;
-}
-
-.anyone {
-	text-align: center;
-	background: rgba(200, 200, 200, 0);
-	width: 25%;
-    margin-left: 355px;
-    height: 360px;
-}
-
-.anyone:hover {
-	background: rgba(128, 128, 128, 0.3);
-}
-
-.location {
-    margin: auto;
-	align-items: center;
-}
-
-input {
-	font-size: 24px;
-}
-.brown1_owl {
-	background-image: url("../assets/brown_owl.png");
-	background-size: 125px;
-	background-repeat: no-repeat;
-	width: 150px;
-	height: 150px;
-	margin-left: -30%;
-	margin-top: 6%;
-	position: absolute;
-}
-.brown2_owl {
-	background-image: url("../assets/brown_owl.png");
-	background-size: 125px;
-	background-repeat: no-repeat;
-	width: 150px;
-	height: 150px;
-	margin-left: 5%;
-	margin-top: 35%;
-	position: absolute;
-}
-
-.brown3_owl {
-	background-image: url("../assets/brown_owl.png");
-	background-size: 125px;
-	background-repeat: no-repeat;
-	width: 150px;
-	height: 150px;
-	margin-left: 50%;
-	margin-top: 12%;
-}
-
-.yellow_owl {
-	background-image: url("../assets/yellow_owl.png");
-	background-size: 125px;
-	background-repeat: no-repeat;
-	width: 150px;
-	height: 150px;
-	margin-left: 5%;
-	margin-top: 35%;
-	position: absolute;
-}
-
-.pink_owl {
-	background-image: url("../assets/pink_owl.png");
-	background-size: 125px;
-	background-repeat: no-repeat;
-	width: 150px;
-	height: 150px;
-	margin-left: 50%;
-	margin-top: 12%;
-}
-
 .title {
 	margin-top: 2%;
 }
 
 .selectC {
-    margin-top: 10%;
-    margin-bottom: 5%;
+	margin-left: 10%;
 	background-size: 150%;
 	position: relative;
 	display: block;
@@ -219,4 +221,4 @@ input {
 }
 .selectC:hover::after {
 	color: #2d0194;
-}
+} */

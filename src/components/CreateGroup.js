@@ -8,9 +8,9 @@ class CreateGroup extends Component {
 				<div className="title">
 					<h1>Create a New Group</h1>
 				</div>
-				<div class="location">
-					<div class="select">
-						<select name="slct" id="slct">
+				<div className="location">
+					<div className="select">
+						<select className="slct" id="slct">
 							<option>Select a location</option>
 							<option value="1">Stevenson Library</option>
 							<option value="2">Central Library</option>
@@ -19,20 +19,23 @@ class CreateGroup extends Component {
 					</div>
 				</div>
 
-				<div class="partition anyone">
+				<div className="partition anyone">
 					<h3>Study with Anyone</h3>
-					<div className="brown1_owl"></div>
-					<div className="yellow_owl"></div>
-					<div className="pink_owl"></div>
+					<div className="owls">
+						<div className="brown1_owl"></div>
+						<div className="yellow_owl"></div>
+						<div className="pink_owl"></div>
+					</div>
 				</div>
-
-				<div class="partition subject">
+				<div className="partition subject">
 					<h3>Study by Subject</h3>
-					<div className="brown1_owl"></div>
-					<div className="brown2_owl"></div>
-					<div className="brown3_owl"></div>
-					<div class="selectC">
-						<select name="slct" id="slct">
+					<div className="owls">
+						<div className="brown1_owl"></div>
+						<div className="brown2_owl"></div>
+						<div className="brown3_owl"></div>
+					</div>
+					<div className="selectC">
+						<select className="slct" id="slct">
 							<option>Select a subject</option>
 							<option value="1">Biology</option>
 							<option value="2">Calculus</option>
@@ -46,7 +49,7 @@ class CreateGroup extends Component {
 						</select>
 					</div>
 				</div>
-				<div class="submit">
+				<div className="submit">
 					<h4>Submit</h4>
 				</div>
 			</div>

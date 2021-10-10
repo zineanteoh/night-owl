@@ -3,6 +3,7 @@ import "./Map.css";
 import CreateGroup from "./CreateGroup";
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
+import JoinGroup from "./JoinGroup";
 
 class Map extends Component {
 
@@ -31,7 +32,7 @@ class Map extends Component {
 							modal
 							nested
 						>
-							<div>Popup content here !!</div>
+							<JoinGroup/>
 						</Popup>
 					</div>
 				</div>

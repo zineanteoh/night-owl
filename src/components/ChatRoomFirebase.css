@@ -116,12 +116,12 @@ button:disabled {
 
 
 
-ul, li {
+.App ul, li {
   text-align: left;
   list-style: none;
 }
 
-p {
+.App p {
   max-width: 500px;
   margin-bottom: 12px;
   line-height: 24px;
@@ -152,7 +152,7 @@ p {
   color: black;
 }
 
-img {
+.App img {
   width: 40px;
   height: 40px;
   border-radius: 50%;

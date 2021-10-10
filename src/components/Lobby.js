@@ -7,8 +7,8 @@ class Lobby extends Component {
 	render() {
 		return (
 			<div className="lobby"> 
-				<Chat />
 				<Map />
+				<Chat />
 			</div>
 		);
 	}

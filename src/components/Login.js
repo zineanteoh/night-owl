@@ -35,17 +35,17 @@ class Login extends Component {
 					<h5>Welcome to</h5>
 					<p> Night Owl</p>
 					<div className="owl-img"></div>
+					<GoogleLogin
+						clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}
+						buttonText="Login"
+						onSuccess={this.onSuccess}
+						onFailure={this.onFailure}
+						cookiePolicy={"single_host_origin"}
+						style={{ marginTop: "100px" }}
+						isSignedIn={true}
+						className="google-btn"
+					/>
 				</div>
-				<GoogleLogin
-					clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}
-					buttonText="Login"
-					onSuccess={this.onSuccess}
-					onFailure={this.onFailure}
-					cookiePolicy={"single_host_origin"}
-					style={{ marginTop: "100px" }}
-					isSignedIn={true}
-					className="google-btn"
-				/>
 			</div>
 		);
 	}

@@ -17,6 +17,7 @@
 	margin-top: 40px;
 	animation: glowing 10000ms infinite;
 	border-radius: 30px;
+	position: relative;
 }
 
 @keyframes glowing {

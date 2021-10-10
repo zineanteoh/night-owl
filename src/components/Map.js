@@ -4,6 +4,7 @@ import CreateGroup from "./CreateGroup";
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
 import JoinGroup from "./JoinGroup";
+import Cluster from "./Cluster";
 
 class Map extends Component {
 
@@ -11,6 +12,7 @@ class Map extends Component {
 		return (
 			<div className="map">
 				<div className="map-area">
+					<Cluster/>
 					<div className="corner-buttons">
 						<Popup
 							trigger={

@@ -1,5 +1,6 @@
-# NightOwl - Owls fly alone, but you don't have to 
+# NightOwl
 
+![](https://i.imgur.com/2CUuppZ.png)
 
 ## Description
 

@@ -1,3 +1,17 @@
+# NightOwl - Owls fly alone, but you don't have to 
+
+
+## Description
+
+NightOwl is a networking and education web app aimed at connecting students to study groups and getting them the help they need anytime, anywhere. 
+
+Winner of the Space Cadet prize.
+
+NightOwl is submitted to [VandyHacks VIII](https://vandyhacksviii.devpost.com/) (Oct 2021)
+
+[See NightOwl on DevPost here](https://devpost.com/software/nightowl-a8w6ru)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
